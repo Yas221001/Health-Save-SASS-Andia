@@ -1,0 +1,617 @@
+/* estilos generales */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Oswald", sans-serif;
+}
+
+.negrita {
+  font-weight: bold;
+}
+
+p {
+  text-align: center;
+}
+
+.textoCentrado {
+  text-align: center;
+}
+
+.fondoVerde {
+  background-color: #7faa4b;
+}
+
+.redes {
+  height: 3rem;
+  width: 3rem;
+}
+/* DESKTOP */
+@media (min-width:1024) {}
+/* grid index*/
+#gridAreas {
+  display: grid;
+  grid-template-areas:
+      "tt1 tt1 tt1 tt1"
+      "img img img img"
+      "sc1 sc1 sc2 sc2"
+      "tt2 bt1 bt2 bt3";
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 2rem 20rem 15rem 5rem;
+  row-gap: 1rem;
+  column-gap: 1rem;
+}
+
+#titulo1 {
+  grid-area: tt1;
+}
+
+#foto {
+  grid-area: img;
+  background-color: #7FAA4B;
+}
+
+#titulo2 {
+  grid-area: tt2;
+}
+
+#seccion1 {
+  grid-area: sc1;
+  gap: 2rem;
+  margin: 1rem;
+}
+
+#seccion2 {
+  grid-area: sc2;
+  column-gap: 2rem;
+  margin: 1rem;
+}
+
+#boton1 {
+  grid-template-areas: bt1;
+}
+
+#boton2 {
+  grid-template-areas: bt2;
+}
+
+#boton3 {
+  grid-template-areas: bt3;
+}
+
+/* header */
+header{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  background-color: #7FAA4B;
+  width: 100%;
+  height: 6rem;
+}
+
+
+#logo {
+  width: 6rem;
+}
+
+/* footer */
+.redes {
+  height: 3rem;
+  width: 3rem;
+  margin: 0.5rem 1rem;
+}
+
+footer {
+  background-color: #7faa4b;
+  height: 8rem;
+  margin-top: 1rem;
+}
+
+footer div{
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  
+}
+
+/* main */
+h1 {
+  font-size: 200%;
+}
+.div1 {
+  width: 1fr;
+  height: 100%;
+  display: flex;
+}
+
+.div2 {
+  width: 2fr;
+  height: 100%;
+}
+
+.div3 {
+  width: 1fr;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.seccion {
+  border-color: #7faa4b;
+  border-width: thick;
+  border-style: solid;
+}
+
+.lista {
+  list-style-type: none;
+  padding: 0.5rem;
+}
+
+div button {
+  background-color: #7faa4b;
+  border-style: none;
+  padding: 0.5rem;
+  /* No es para poner un borde nulo, es para sacar el borde predeterminado con el que viene el boton, no borrar */
+}
+
+button a {
+  font-size: 1rem;
+  color: black;
+  text-decoration: none;
+}
+
+button span {
+  font-weight: bold;
+}
+
+.fotosFlex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+/* nosotros */
+#gridNosotros {
+  display: grid;
+  grid-template-areas:
+  "art1"
+  "art2"
+  "art3"; 
+}
+
+#art1 {
+  grid-area: art1;
+}
+
+#art2 {
+  grid-area: art2;
+}
+
+#art3 {
+  grid-area: art3;
+}
+.articulo {
+  border-color: #7faa4b;
+  border-width: thick;
+  border-style: solid;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.tituloArticulo {
+  color: white;
+  text-align: center;
+  background-color: #7faa4b;
+  width: 100%;
+}
+
+section iframe {
+  width: 80%;
+  height: 35rem;
+  padding: 1rem;
+}
+section ol {
+  padding: 0.5rem 0.5rem 0.5rem 2rem;
+}
+section p {
+  padding: 1rem;
+}
+li span {
+  font-weight: bold;
+} 
+
+/* información*/
+#gridInfo{
+  display: grid;
+  grid-template-areas:
+  "texto"
+  "imgs"
+  "arts";
+  grid-template-rows: auto auto auto; 
+  grid-template-columns: 100%;
+}
+
+#texto {
+  grid-area: texto;
+}
+
+#imgs {
+  grid-area: imgs;
+}
+
+#arts {
+  grid-area: arts;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+}
+main div {
+  display: flex;
+  flex-direction:row-reverse;
+  flex-wrap: wrap;
+  align-content:center;
+  justify-content:space-between;
+}
+section article {
+  border-style: solid;
+  border-width: thick;
+  border-color: #7faa4b;
+  margin: 1rem 3%;
+  display: flex;
+  flex-direction: column;
+  align-content:space-between;
+  justify-content:center;
+
+}
+.org {
+  width: 7rem;
+  margin: .5rem 1.5rem;
+}
+
+/* voluntarios*/
+#gridVoluntarios {
+    display: grid;
+    grid-template-areas:
+        "ttv"
+        "imgv"
+        "pda";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    row-gap: 1rem;
+  }
+  
+  #ttv {
+    grid-area: ttv;
+  }
+  
+  #pda {
+    grid-area: pda;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  #imgv {
+    grid-area: imgv;
+    display: flex;
+    flex-direction:row ;
+    justify-content: center;
+  }
+
+.imgVoluntarios {
+  width: 25rem;
+  padding: 0.5rem;
+}
+
+.titulo {
+  color: white;
+  background-color: #7faa4b;
+  text-align: center;
+  margin: 1rem 0rem;
+  padding: 1rem;
+  width: 100%;
+}
+article p {
+  text-align: center;
+}
+.dia1 {
+  border-width: thick;
+  border-style: solid;
+  border-color: #7faa4b;
+  width: 22rem;
+  text-align: center;
+  margin: 1rem;
+}
+.dia2 {
+  border-width: thick;
+  border-style: solid;
+  border-color: #7faa4b;
+  width: 22rem;
+  text-align: center;
+  margin: 1rem;
+}
+article div {
+  display: inline-block;
+}
+/* contacto*/
+#gridContacto {
+  display: grid;
+  grid-template-areas:
+      "fm";
+  grid-template-columns: 100%;
+  grid-template-rows: auto;
+}
+
+#titulo1 {
+  grid-area: tt1;
+}
+
+form {
+  border-color: #7faa4b;
+  border-width: thick;
+  border-style: solid;
+  margin: 2rem 2rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+}
+
+form label {
+  font-size: 1rem;
+}
+/* TABLET */
+@media (min-width:481px) and (max-width:1023px){
+  /* grid index*/
+  #gridAreas {
+    display: grid;
+    grid-template-areas:
+        "tt1 tt1"
+        "img img"
+        "sc1 sc1"
+        "sc2 sc2"
+        "tt2 bt1" 
+        "bt2 bt3";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 20rem auto auto 5rem 5rem;
+    row-gap: 1rem;
+    column-gap: 1rem;
+  }
+  
+  #titulo1 {
+    grid-area: tt1;
+  }
+  
+  #foto1 {
+    grid-area: img;
+    background-color: #7FAA4B;
+    display: none;
+  }
+
+  #foto2 {
+    grid-area: img;
+    background-color: #7FAA4B;
+  }
+  
+  #foto3 {
+    grid-area: img;
+    background-color: #7FAA4B;
+    display: none;
+  }
+  
+  #titulo2 {
+    grid-area: tt2;
+  }
+  
+  #seccion1 {
+    grid-area: sc1;
+    gap: 2rem;
+    margin: 1rem;
+  }
+  
+  #seccion2 {
+    grid-area: sc2;
+    column-gap: 2rem;
+    margin: 1rem;
+  }
+  
+  #boton1 {
+    grid-template-areas: bt1;
+    gap: 0.5rem;
+    padding: 0rem 0.5rem;
+  }
+  
+  #boton2 {
+    grid-template-areas: bt2;
+    gap:0.5rem;
+    padding: 0rem 0.5rem;
+  }
+  
+  #boton3 {
+    grid-template-areas: bt3;
+    gap: 0.5rem;
+    padding: 0rem 0.5rem;
+  }
+
+  .seccion {
+    border-color: #7faa4b;
+    border-width: thick;
+    border-style: solid;
+  }
+  
+  .lista {
+    list-style-type: none;
+    padding: 1rem;
+  }
+  
+  div button {
+    background-color: #7faa4b;
+    border-style: none;
+    padding: 1rem;
+    /* No es para poner un borde nulo, es para sacar el borde predeterminado con el que viene el boton, no borrar */
+    margin: 0rem 4rem;
+  }
+  .lista {
+    list-style-type: none;
+    padding: 0rem 1rem;
+  }
+  
+  div button {
+    background-color: #7faa4b;
+    border-style: none;
+    padding: 0rem 1rem;
+  }
+  .menu li a {
+    font-size: 18px;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+  }
+
+  #imgv {
+    grid-area: imgv;
+    display: flex;
+    flex-wrap:  wrap;
+    align-content: center;
+    justify-content: center;
+  }
+
+}
+/* SMARTPHONE */
+@media (max-width:480px) {
+  #gridAreas {
+    display: grid;
+    grid-template-areas:
+        "tt1"
+        "img"
+        "sc1"
+        "sc2"
+        "tt2"
+        "bt1" 
+        "bt2" 
+        "bt3";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 15rem auto auto 2rem 5rem 5rem 5rem;
+    row-gap: 1rem;
+    column-gap: 1rem;
+  }
+  
+  #titulo1 {
+    grid-area: tt1;
+  }
+  
+  #foto1 {
+    grid-area: img;
+    background-color: #7FAA4B;
+    display: none;
+  }
+
+  #foto2 {
+    grid-area: img;
+    background-color: #7FAA4B;
+  }
+  
+  #foto3 {
+    grid-area: img;
+    background-color: #7FAA4B;
+    display: none;
+  }
+  
+  #titulo2 {
+    grid-area: tt2;
+  }
+  
+  #seccion1 {
+    grid-area: sc1;
+    gap: 2rem;
+    margin: 1rem;
+  }
+  
+  #seccion2 {
+    grid-area: sc2;
+    column-gap: 2rem;
+    margin: 1rem;
+  }
+  
+  #boton1 {
+    grid-template-areas: bt1;
+    gap: 0.5rem;
+    padding: 0rem 0.5rem;
+  }
+  
+  #boton2 {
+    grid-template-areas: bt2;
+    gap:0.5rem;
+    padding: 0rem 0.5rem;
+  }
+  
+  #boton3 {
+    grid-template-areas: bt3;
+    gap: 0.5rem;
+    padding: 0rem 0.5rem;
+  }
+  header{
+    display: flex;
+    flex-direction: column;
+    background-color: #7FAA4B;
+    width: 100%;
+    height: auto;
+  }
+  .menu li a {
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+  }
+  
+  .menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+    gap: 1.5rem;
+  }
+
+  #logo {
+    width: 6rem;
+  }
+  
+  h1 {
+    font-size: 100%;
+  }
+
+  div button {
+    background-color: #7faa4b;
+    border-style: none;
+    width: 100%;
+    /* No es para poner un borde nulo, es para sacar el borde predeterminado con el que viene el boton, no borrar */
+  }
+
+  section iframe {
+    width: 80%;
+    height: 15rem;
+  }
+  .div2 {
+    width: 100%;
+  }
+
+  .org {
+    width: 4rem;
+    margin: .5rem .5rem;
+  }
+
+  #imgv {
+    grid-area: imgv;
+    display: flex;
+    flex-wrap:  wrap;
+    align-content: center;
+    justify-content: center;
+  }
+}
