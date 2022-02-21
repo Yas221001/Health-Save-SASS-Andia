@@ -1,0 +1,11 @@
+$mapa: (
+    1: #c9ee9d,
+    2: #7faa4b,
+    3: #467709);
+    
+    @each $clave, $valor in $mapa {
+        .boton-#{$clave} {
+            background-color: $valor;
+            border: $valor;
+        }
+    }

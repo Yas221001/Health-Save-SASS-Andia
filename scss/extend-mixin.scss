@@ -1,0 +1,26 @@
+.seccion-a {
+    border-color: #7faa4b;
+    border-width: thick;
+    border-style: solid;
+  }
+  
+
+.seccion-b {
+    @extend .seccion-a;
+    border-color: #2c5000;
+}
+
+@mixin fotos($ancho,$alto) {
+    width: $ancho;
+    height: $alto;
+}
+.div1 {
+    @include fotos (1fr,100%)
+}
+.div2 {
+    @include fotos (2fr,100%)
+}
+.div3 {
+    @include fotos (1fr,100%)
+}
+

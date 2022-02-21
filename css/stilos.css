@@ -119,29 +119,17 @@ h1 {
   font-size: 200%;
 }
 .div1 {
-  width: 1fr;
-  height: 100%;
   display: flex;
 }
 
-.div2 {
-  width: 2fr;
-  height: 100%;
-}
+
 
 .div3 {
-  width: 1fr;
-  height: 100%;
   display: flex;
   justify-content: center;
   align-content: center;
 }
 
-.seccion {
-  border-color: #7faa4b;
-  border-width: thick;
-  border-style: solid;
-}
 
 .lista {
   list-style-type: none;
@@ -190,7 +178,8 @@ button span {
 #art3 {
   grid-area: art3;
 }
-.articulo {
+
+.articulo-a {
   border-color: #7faa4b;
   border-width: thick;
   border-style: solid;

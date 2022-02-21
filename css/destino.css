@@ -14,3 +14,35 @@ li a {
   li a:hover {
     text-decoration: underline;
     color: black; }
+
+.boton-1 {
+  background-color: #c9ee9d;
+  border: #c9ee9d; }
+
+.boton-2 {
+  background-color: #7faa4b;
+  border: #7faa4b; }
+
+.boton-3 {
+  background-color: #467709;
+  border: #467709; }
+
+.seccion-a, .seccion-b {
+  border-color: #7faa4b;
+  border-width: thick;
+  border-style: solid; }
+
+.seccion-b {
+  border-color: #2c5000; }
+
+.div1 {
+  width: 1fr;
+  height: 100%; }
+
+.div2 {
+  width: 2fr;
+  height: 100%; }
+
+.div3 {
+  width: 1fr;
+  height: 100%; }
